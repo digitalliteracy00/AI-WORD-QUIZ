@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>AI 용어 학습 게임 (1단계·2단계)</title>
+<title>AI 용어 탐험대</title>
 <style>
   :root{
     --bg-a: #FFF1F5;
@@ -46,7 +46,7 @@
     display:inline-flex;
     align-items:center;
     gap: 6px;
-    font-size: clamp(12px, 1.6vw, 14px);
+    font-size: clamp(15.5px, 2vw, 18px);
     font-weight: 700;
     padding: 6px 14px;
     border-radius: 999px;
@@ -68,14 +68,14 @@
     padding: clamp(20px, 4vw, 36px) clamp(18px, 4vw, 32px) clamp(24px, 4vw, 40px);
   }
   h1{
-    font-size: clamp(22px, 4.2vw, 30px);
+    font-size: clamp(28px, 5vw, 38px);
     font-weight: 800;
     margin: 0 0 12px;
     letter-spacing: -0.01em;
     color: var(--accent-purple);
   }
   .subtitle{
-    font-size: clamp(14px, 2vw, 16px);
+    font-size: clamp(18px, 2.5vw, 20px);
     color: var(--text);
     margin: 0 0 18px;
     line-height: 1.6;
@@ -100,7 +100,7 @@
     display:inline-flex;
     align-items:center;
     gap: 6px;
-    font-size: clamp(13px, 1.9vw, 15px);
+    font-size: clamp(16.5px, 2vw, 19px);
     font-weight: 700;
     padding: 8px 14px;
     border-radius: 999px;
@@ -113,11 +113,11 @@
     display:inline-flex;
     align-items:center;
     justify-content:center;
-    width: 20px; height: 20px;
+    width: 25px; height: 25px;
     border-radius: 50%;
     background: var(--cell-border);
     color: var(--text);
-    font-size: 12px;
+    font-size: 15px;
   }
   .stage-pill.active{
     background: var(--amber-dim);
@@ -142,7 +142,7 @@
     flex-wrap: wrap;
   }
   .stat{
-    font-size: clamp(14px, 2vw, 16px);
+    font-size: clamp(18px, 2.5vw, 20px);
     font-weight: 700;
     padding: 8px 16px;
     border-radius: 999px;
@@ -158,7 +158,7 @@
   .btn-row{ display:flex; gap:10px; flex-wrap:wrap; }
   button{
     font-family: inherit;
-    font-size: clamp(14px, 2vw, 16px);
+    font-size: clamp(18px, 2.5vw, 20px);
     font-weight: 700;
     padding: 12px 20px;
     border-radius: 999px;
@@ -181,7 +181,7 @@
     background: var(--teal-dim);
     border: 1.5px solid var(--teal);
     color: #17835A;
-    font-size: clamp(15px, 2.2vw, 17px);
+    font-size: clamp(19px, 2.5vw, 22px);
     font-weight: 700;
     display: none;
     align-items: center;
@@ -211,15 +211,15 @@
     animation: popIn 0.25s ease-out;
     box-shadow: 0 16px 40px rgba(167, 139, 250, 0.28);
   }
-  .modal-emoji{ font-size: 48px; margin-bottom: 8px; }
+  .modal-emoji{ font-size: 60px; margin-bottom: 8px; }
   .modal-title{
-    font-size: clamp(22px, 3.5vw, 26px);
+    font-size: clamp(28px, 4vw, 33px);
     font-weight: 800;
     margin: 0 0 10px;
     color: var(--accent-purple);
   }
   .modal-text{
-    font-size: clamp(14px, 2vw, 16px);
+    font-size: clamp(18px, 2.5vw, 20px);
     color: var(--text);
     line-height: 1.7;
     margin: 0 0 24px;
@@ -231,7 +231,7 @@
 
   footer{
     margin-top: 22px;
-    font-size: clamp(12.5px, 1.8vw, 14px);
+    font-size: clamp(16px, 2vw, 18px);
     color: var(--text-dim);
     line-height: 1.7;
   }
@@ -270,7 +270,7 @@
     position:absolute;
     top: 2px;
     left: 3px;
-    font-size: clamp(7px, 1.4vw, 10px);
+    font-size: clamp(9px, 1.5vw, 13px);
     font-weight: 700;
     color: var(--accent-purple);
     line-height: 1;
@@ -284,7 +284,7 @@
     background: var(--cell);
     border-radius: 5px;
     text-align:center;
-    font-size: clamp(13px, 3vw, 19px);
+    font-size: clamp(16.5px, 3.5vw, 24px);
     font-weight: 800;
     color: var(--text);
     padding: 0;
@@ -302,7 +302,7 @@
 
   .xclues-wrap{ display:flex; flex-direction: column; gap: 18px; }
   .clue-group h2{
-    font-size: clamp(15px, 2.2vw, 18px);
+    font-size: clamp(19px, 2.5vw, 23px);
     font-weight: 800;
     color: var(--accent-purple);
     margin: 0 0 8px;
@@ -310,7 +310,7 @@
   .clue-list{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:6px; }
   .clue-item{
     display:flex; gap:8px; align-items:baseline;
-    font-size: clamp(13.5px, 2vw, 15.5px);
+    font-size: clamp(17.5px, 2.5vw, 20px);
     line-height:1.5;
     padding: 8px 10px;
     border-radius: 10px;
@@ -325,7 +325,7 @@
   /* ===== 2단계: 낱말찾기 ===== */
   .wordlist{ margin: 0 0 16px; display:flex; flex-wrap: wrap; gap: 8px; }
   .wordlist span{
-    font-size: clamp(13px, 1.8vw, 15px);
+    font-size: clamp(16.5px, 2vw, 19px);
     font-weight: 600;
     padding: 6px 14px;
     border-radius: 999px;
@@ -352,7 +352,7 @@
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size: clamp(14px, 3.2vw, 20px);
+    font-size: clamp(18px, 3.5vw, 26px);
     font-weight: 700;
     border-radius: 8px;
     background: var(--cell);
@@ -368,29 +368,244 @@
   .wcell.selecting{ background: var(--amber-dim); border-color: var(--amber); color: #C25A00; transform: scale(1.04); }
   .wcell.wrong{ background: var(--danger-dim); border-color: var(--danger); color: #C23434; }
   .wcell.found{ background: var(--teal-dim); border-color: var(--teal); color: #17835A; }
+
+  /* ===== 점수판 ===== */
+  .score-board{
+    margin: 4px 0 22px;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+  }
+  .score-row{
+    font-size: clamp(18px, 2.5vw, 20px);
+    font-weight: 700;
+    color: var(--text);
+    background: var(--cell);
+    border: 1.5px solid var(--cell-border);
+    border-radius: 12px;
+    padding: 10px 14px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap: 8px;
+  }
+  .score-row strong{ color: var(--accent-purple); font-size: 1.2em; }
+  .score-row.total{
+    background: var(--amber-dim);
+    border-color: var(--amber);
+    font-size: clamp(19px, 2.5vw, 23px);
+  }
+  .score-row.total strong{ color: #C25A00; }
+
+  /* ===== 최종 등급 뱃지 ===== */
+  .rank-badge{
+    margin: 4px 0 20px;
+    padding: 18px 16px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, var(--amber-dim), var(--teal-dim));
+    border: 2px solid var(--accent-purple);
+    text-align: center;
+  }
+  .rank-emoji{ font-size: clamp(46px, 10.5vw, 64px); line-height: 1; margin-bottom: 4px; }
+  .rank-title{
+    font-size: clamp(26px, 5vw, 33px);
+    font-weight: 800;
+    color: var(--accent-purple);
+    margin-bottom: 6px;
+  }
+  .rank-desc{
+    font-size: clamp(16.5px, 2.5vw, 19px);
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  /* ===== 타이머 / 종료 상태 ===== */
+  .stat.time-warning{ background: var(--danger-dim); border-color: var(--danger); color: #C23434; }
+  .xcell:disabled{ opacity: .6; cursor: not-allowed; }
+  button:disabled{ opacity: .5; cursor: not-allowed; }
+  .wgrid.locked{ opacity: .55; pointer-events: none; }
+
+  /* ===== 0단계: 용어 알아보기 · 선긋기 ===== */
+  .study-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
+    margin: 0 0 22px;
+  }
+  .study-item{
+    background: var(--cell);
+    border: 1.5px solid var(--cell-border);
+    border-radius: 12px;
+    padding: 12px 14px;
+    display:flex;
+    gap: 10px;
+    align-items:flex-start;
+  }
+  .study-item .icon{
+    font-size: clamp(31px, 5vw, 38px);
+    line-height: 1.1;
+    flex: 0 0 auto;
+  }
+  .study-item .study-text{ flex: 1 1 auto; min-width: 0; }
+  .study-item .term{
+    font-weight: 800;
+    color: var(--accent-purple);
+    font-size: clamp(18px, 2.5vw, 20px);
+    margin-bottom: 3px;
+  }
+  .study-item .def{
+    font-size: clamp(16px, 2vw, 18px);
+    color: var(--text);
+    line-height: 1.5;
+  }
+  #introConfirmBtn{
+    font-size: clamp(19px, 3vw, 23px);
+    padding: 14px 28px;
+  }
+  .match-layout{
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    gap: 6%;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .match-col{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 47%;
+  }
+  .match-box{
+    font-size: clamp(16.5px, 2vw, 19px);
+    font-weight: 700;
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: var(--cell);
+    border: 1.5px solid var(--cell-border);
+    color: var(--text);
+    cursor: pointer;
+    user-select: none;
+    touch-action: manipulation;
+    line-height: 1.4;
+    transition: background 0.12s, border-color 0.12s, transform 0.08s;
+  }
+  .match-box:hover{ border-color: var(--accent-purple); }
+  .match-box.selecting{ background: var(--amber-dim); border-color: var(--amber); color: #C25A00; transform: scale(1.03); }
+  .match-box.found{ background: var(--teal-dim); border-color: var(--teal); color: #17835A; cursor: default; }
+  .match-box.wrong{ background: var(--danger-dim); border-color: var(--danger); color: #C23434; }
+  .match-svg{ position:absolute; inset:0; width:100%; height:100%; pointer-events:none; overflow: visible; }
+  .match-svg line{ stroke-width: 3; }
+  .match-layout.locked{ opacity: .55; pointer-events: none; }
+
+  /* ===== 우측 상단 대형 타이머 ===== */
+  .floating-timer{
+    position: fixed;
+    top: calc(14px + env(safe-area-inset-top, 0px));
+    right: 14px;
+    z-index: 200;
+    display:flex;
+    align-items:center;
+    gap: 8px;
+    background: var(--panel);
+    border: 3px solid var(--accent-purple);
+    border-radius: 999px;
+    padding: 8px 20px;
+    box-shadow: 0 8px 24px rgba(167, 139, 250, 0.35);
+  }
+  .floating-timer-emoji{ font-size: clamp(26px, 4.5vw, 33px); line-height: 1; }
+  .floating-timer strong{
+    font-size: clamp(31px, 6.5vw, 44px);
+    font-weight: 800;
+    color: var(--accent-purple);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  .floating-timer.time-warning{
+    border-color: var(--danger);
+    background: var(--danger-dim);
+    animation: pulse-warning 1s ease-in-out infinite;
+  }
+  .floating-timer.time-warning strong{ color: #C23434; }
+  @keyframes pulse-warning{
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.07); }
+  }
+  @media (max-width: 480px){
+    .floating-timer{ top: calc(8px + env(safe-area-inset-top, 0px)); right: 8px; padding: 6px 14px; }
+  }
 </style>
 </head>
 <body>
+<div class="floating-timer" id="floatingTimer">
+  <span class="floating-timer-emoji">⏰</span>
+  <strong id="floatingTimerValue">3:00</strong>
+</div>
 <div class="board">
   <div class="stripe"></div>
   <div class="inner">
     <span class="edu-badge">🎓 초등학교 AI 리터러시 교육용 자료</span>
-    <h1>AI 용어 학습 게임</h1>
+    <h1>AI 용어 탐험대</h1>
+
+    <!-- ===== 시작 전: 용어 확인 화면 ===== -->
+    <section id="introScreen">
+      <p class="subtitle">🚀 1단계를 시작하기 전에, 오늘 배울 AI 용어와 뜻을 먼저 살펴볼까요?</p>
+      <div class="study-grid" id="studyList"></div>
+      <div class="controls" style="justify-content:center;">
+        <button id="introConfirmBtn">✅ 해당 단어들을 확인했어요!</button>
+      </div>
+    </section>
+
+    <div id="gameFlow" style="display:none;">
     <div class="stage-indicator-row">
       <div class="stage-indicator">
-        <span class="stage-pill active" id="pill1"><span class="pill-num">1</span>십자말풀이</span>
+        <span class="stage-pill active" id="pillMatch"><span class="pill-num">1</span>용어 알아보기</span>
         <span class="stage-arrow">→</span>
-        <span class="stage-pill" id="pill2"><span class="pill-num">2</span>낱말찾기</span>
+        <span class="stage-pill" id="pill1"><span class="pill-num">2</span>낱말찾기</span>
+        <span class="stage-arrow">→</span>
+        <span class="stage-pill" id="pill2"><span class="pill-num">3</span>십자말풀이</span>
       </div>
       <button id="restartTopBtn" class="secondary">처음부터 다시 하기</button>
     </div>
 
-    <!-- ===== 1단계 ===== -->
-    <section id="stage1">
-      <p class="subtitle">가로/세로 힌트를 읽고 칸에 알맞은 낱말을 채워 보세요. 칸을 누르면 바로 입력할 수 있고, 힌트를 눌러도 그 낱말 칸으로 이동해요.</p>
+    <!-- ===== 1단계: 용어 알아보기 · 선긋기 ===== -->
+    <section id="stageMatch">
+      <p class="subtitle">준비되면 '시작하기'를 누르고, 왼쪽 용어와 오른쪽 뜻을 순서대로 눌러 선으로 연결해 보세요. (제한시간 3분)</p>
+      <div class="controls">
+        <div class="stat">연결 완료 <strong id="foundCountMatch">0</strong> / 10</div>
+        <div class="stat">점수 <strong id="scoreMatch">0</strong></div>
+        <button id="startBtnMatch">시작하기</button>
+      </div>
+      <div class="match-layout" id="matchLayout">
+        <svg class="match-svg" id="matchSvg"></svg>
+        <div class="match-col" id="matchTerms"></div>
+        <div class="match-col" id="matchDefs"></div>
+      </div>
+      <div class="banner" id="bannerMatch">🎉 1단계 완료! 모든 용어를 연결했어요!</div>
+    </section>
+
+    <!-- ===== 2단계: 낱말찾기 ===== -->
+    <section id="stage1" style="display:none;">
+      <p class="subtitle">가로·세로·대각선 방향으로 숨어 있는 10개 단어를 모두 찾으면 2단계 통과예요. 단어의 첫 글자부터 이어지는 방향으로 한 칸씩 순서대로 눌러보세요. (제한시간 2분)</p>
+      <div class="controls">
+        <div class="stat">찾은 단어 <strong id="foundCount2">0</strong> / 10</div>
+        <div class="stat">점수 <strong id="score1">0</strong></div>
+        <button id="startBtn1">시작하기</button>
+        <button id="newGameBtn" class="secondary">새 게임</button>
+      </div>
+      <div class="wordlist" id="wordlist"></div>
+      <div class="wgrid" id="wgrid"></div>
+      <div class="banner" id="banner2">🎉 2단계 완료! 모든 단어를 찾았어요!</div>
+    </section>
+
+    <!-- ===== 3단계: 십자말풀이 ===== -->
+    <section id="stage2" style="display:none;">
+      <p class="subtitle">가로/세로 힌트를 읽고 칸에 알맞은 낱말을 채워 보세요. 칸을 누르면 바로 입력할 수 있고, 힌트를 눌러도 그 낱말 칸으로 이동해요. (제한시간 3분)</p>
       <div class="controls">
         <div class="stat">맞은 낱말 <strong id="foundCount1">0</strong> / <span id="totalCount1">0</span></div>
+        <div class="stat">점수 <strong id="score2">0</strong></div>
         <div class="btn-row">
+          <button id="startBtn2">시작하기</button>
           <button id="checkBtn">정답 확인</button>
           <button id="resetBtn" class="secondary">다시 풀기</button>
         </div>
@@ -408,31 +623,31 @@
           </div>
         </div>
       </div>
-      <div class="banner" id="banner1">🎉 1단계 완료! 모든 낱말을 맞혔어요!</div>
+      <div class="banner" id="banner1">🎉 3단계 완료! 모든 낱말을 맞혔어요!</div>
     </section>
 
-    <!-- ===== 2단계 ===== -->
-    <section id="stage2" style="display:none;">
-      <p class="subtitle">가로·세로·대각선 방향으로 숨어 있는 10개 단어를 모두 찾으면 2단계 통과예요. 단어의 첫 글자부터 이어지는 방향으로 한 칸씩 순서대로 눌러보세요.</p>
-      <div class="controls">
-        <div class="stat">찾은 단어 <strong id="foundCount2">0</strong> / 10</div>
-        <button id="newGameBtn">새 게임</button>
-      </div>
-      <div class="wordlist" id="wordlist"></div>
-      <div class="wgrid" id="wgrid"></div>
-      <div class="banner" id="banner2">🎉 2단계 완료! 모든 단어를 찾았어요!</div>
-    </section>
+    <footer id="footerText">왼쪽 용어와 오른쪽 뜻을 순서대로 눌러 선으로 연결해 보세요.<br>※ 본 자료는 초등학교 AI 리터러시 수업을 위한 교육용 콘텐츠입니다.</footer>
+    </div>
+  </div>
+</div>
 
-    <footer id="footerText">칸에 낱말의 글자를 하나씩 입력하세요. 정답 확인을 누르면 맞은 칸은 초록색, 틀린 칸은 빨간색으로 표시돼요.<br>※ 본 자료는 초등학교 AI 리터러시 수업을 위한 교육용 콘텐츠입니다.</footer>
+<div class="modal-overlay" id="matchCompleteModal">
+  <div class="modal-card">
+    <div class="modal-emoji">✅</div>
+    <h2 class="modal-title">1단계 완료!</h2>
+    <p class="modal-text">용어와 뜻을 모두 연결했어요!<br>1단계 점수: <strong id="matchDoneScore">100</strong>점</p>
+    <p class="modal-text">이제 2단계 낱말찾기에 도전해 보세요!</p>
+    <button id="goStage1Btn">2단계 시작하기</button>
   </div>
 </div>
 
 <div class="modal-overlay" id="stage1CompleteModal">
   <div class="modal-card">
     <div class="modal-emoji">✅</div>
-    <h2 class="modal-title">1단계 완료!</h2>
-    <p class="modal-text">십자말풀이를 모두 맞혔어요.<br>이제 2단계 낱말찾기에 도전해 보세요!</p>
-    <button id="goStage2Btn">2단계 시작하기</button>
+    <h2 class="modal-title">2단계 완료!</h2>
+    <p class="modal-text">낱말찾기를 모두 찾았어요!<br>2단계 점수: <strong id="stage1DoneScore">100</strong>점</p>
+    <p class="modal-text">이제 3단계 십자말풀이에 도전해 보세요!</p>
+    <button id="goStage2Btn">3단계 시작하기</button>
   </div>
 </div>
 
@@ -440,14 +655,178 @@
   <div class="modal-card">
     <div class="modal-emoji">🏆</div>
     <h2 class="modal-title">최종 통과!</h2>
-    <p class="modal-text">1단계 십자말풀이와 2단계 낱말찾기를<br>모두 통과했어요. 정말 잘했어요!</p>
+    <p class="modal-text">1단계 용어 매칭, 2단계 낱말찾기, 3단계 십자말풀이를<br>모두 통과했어요. 정말 잘했어요!</p>
+    <div class="rank-badge" id="rankBadge">
+      <div class="rank-emoji" id="rankEmoji">🏆</div>
+      <div class="rank-title" id="rankTitle">AI 마스터</div>
+      <div class="rank-desc" id="rankDesc">최고예요!</div>
+    </div>
+    <div class="score-board">
+      <div class="score-row"><span>1단계 (용어 매칭)</span><span><strong id="finalScore0">100</strong>점</span></div>
+      <div class="score-row"><span>2단계 (낱말찾기)</span><span><strong id="finalScore1">100</strong>점</span></div>
+      <div class="score-row"><span>3단계 (십자말풀이)</span><span><strong id="finalScore2">100</strong>점</span></div>
+      <div class="score-row total"><span>총점</span><span><strong id="finalScoreTotal">300</strong> / 300점</span></div>
+    </div>
     <button id="restartAllBtn">처음부터 다시 하기</button>
   </div>
 </div>
 
 <script>
 /* =========================================================
-   1단계: 십자말풀이
+   1단계: 용어 알아보기 · 선긋기
+   ========================================================= */
+const MATCH_ITEMS = [
+  { word: "개인정보",     def: "이름, 전화번호처럼 나를 알 수 있게 해주는 정보", icon: "🔒" },
+  { word: "저작권",       def: "다른 사람이 만든 글, 그림, 음악을 함부로 쓰지 못하게 지켜 주는 권리", icon: "🎨" },
+  { word: "편향성",       def: "한쪽으로 치우친 생각이나 태도", icon: "🧭" },
+  { word: "공정성",       def: "모두를 차별 없이 똑같이 대하는 것", icon: "⚖️" },
+  { word: "할루시네이션", def: "AI가 사실이 아닌 것을 마치 사실인 것처럼 만들어 내는 현상", icon: "👻" },
+  { word: "신뢰성",       def: "믿을 수 있는 정도", icon: "🤝" },
+  { word: "인공지능",     def: "사람처럼 배우고 생각하도록 만든 컴퓨터 기술", icon: "🤖" },
+  { word: "빅데이터",     def: "아주 많은 양의 자료나 정보", icon: "📊" },
+  { word: "알고리즘",     def: "문제를 해결하기 위한 순서와 방법", icon: "🧩" },
+  { word: "딥페이크",     def: "AI로 진짜처럼 만든 가짜 영상이나 사진", icon: "🎭" },
+];
+
+const studyListEl = document.getElementById('studyList');
+const matchTermsEl = document.getElementById('matchTerms');
+const matchDefsEl = document.getElementById('matchDefs');
+const matchSvgEl = document.getElementById('matchSvg');
+const matchLayoutEl = document.getElementById('matchLayout');
+const foundCountMatchEl = document.getElementById('foundCountMatch');
+const scoreMatchEl = document.getElementById('scoreMatch');
+const bannerMatchEl = document.getElementById('bannerMatch');
+const startBtnMatch = document.getElementById('startBtnMatch');
+const matchCompleteModal = document.getElementById('matchCompleteModal');
+
+let matchFound = new Set();
+let matchMistakes = 0;
+let matchSelectedWord = null;
+let matchLocked = true;
+let matchStarted = false;
+let matchFinalScore = 0;
+
+function shuffleArray(arr){
+  const a = arr.slice();
+  for(let i = a.length - 1; i > 0; i--){
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function renderStudyList(){
+  studyListEl.innerHTML = '';
+  MATCH_ITEMS.forEach(item => {
+    const div = document.createElement('div');
+    div.className = 'study-item';
+    div.innerHTML = '<div class="icon">' + item.icon + '</div><div class="study-text"><div class="term">' + item.word + '</div><div class="def">' + item.def + '</div></div>';
+    studyListEl.appendChild(div);
+  });
+}
+renderStudyList();
+
+function computeScoreMatch(){
+  const ratio = matchFound.size / MATCH_ITEMS.length;
+  return Math.round(ratio * 100);
+}
+
+function clearMatchLines(){
+  matchSvgEl.innerHTML = '';
+}
+
+function drawMatchLine(elA, elB, color){
+  const wrapRect = matchLayoutEl.getBoundingClientRect();
+  const rectA = elA.getBoundingClientRect();
+  const rectB = elB.getBoundingClientRect();
+  const x1 = rectA.right - wrapRect.left;
+  const y1 = rectA.top + rectA.height / 2 - wrapRect.top;
+  const x2 = rectB.left - wrapRect.left;
+  const y2 = rectB.top + rectB.height / 2 - wrapRect.top;
+  const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+  line.setAttribute('x1', x1);
+  line.setAttribute('y1', y1);
+  line.setAttribute('x2', x2);
+  line.setAttribute('y2', y2);
+  line.setAttribute('stroke', color);
+  matchSvgEl.appendChild(line);
+}
+
+function clearMatchSelection(){
+  matchSelectedWord = null;
+  const sel = matchTermsEl.querySelector('.match-box.selecting');
+  if(sel) sel.classList.remove('selecting');
+}
+
+function handleTermClick(word, el){
+  if(matchLocked || matchFound.has(word)) return;
+  clearMatchSelection();
+  matchSelectedWord = word;
+  el.classList.add('selecting');
+}
+
+function handleDefClick(word, el){
+  if(matchLocked || matchSelectedWord === null || el.classList.contains('found')) return;
+  const termEl = matchTermsEl.querySelector('[data-word="' + matchSelectedWord + '"]');
+  if(word === matchSelectedWord){
+    matchFound.add(word);
+    if(termEl){ termEl.classList.remove('selecting'); termEl.classList.add('found'); }
+    el.classList.add('found');
+    if(termEl) drawMatchLine(termEl, el, '#35C98D');
+    matchSelectedWord = null;
+    foundCountMatchEl.textContent = String(matchFound.size);
+    if(scoreMatchEl) scoreMatchEl.textContent = String(computeScoreMatch());
+    if(matchFound.size === MATCH_ITEMS.length){
+      finishStageMatch('complete');
+    }
+  } else {
+    matchMistakes++;
+    if(scoreMatchEl) scoreMatchEl.textContent = String(computeScoreMatch());
+    if(termEl) termEl.classList.add('wrong');
+    el.classList.add('wrong');
+    matchSelectedWord = null;
+    setTimeout(() => {
+      if(termEl) termEl.classList.remove('wrong', 'selecting');
+      el.classList.remove('wrong');
+    }, 400);
+  }
+}
+
+function buildMatching(){
+  matchFound = new Set();
+  matchMistakes = 0;
+  matchSelectedWord = null;
+  clearMatchLines();
+
+  matchTermsEl.innerHTML = '';
+  MATCH_ITEMS.forEach(item => {
+    const div = document.createElement('div');
+    div.className = 'match-box';
+    div.textContent = item.word;
+    div.setAttribute('data-word', item.word);
+    div.addEventListener('click', () => handleTermClick(item.word, div));
+    matchTermsEl.appendChild(div);
+  });
+
+  matchDefsEl.innerHTML = '';
+  shuffleArray(MATCH_ITEMS).forEach(item => {
+    const div = document.createElement('div');
+    div.className = 'match-box';
+    div.textContent = item.def;
+    div.setAttribute('data-word', item.word);
+    div.addEventListener('click', () => handleDefClick(item.word, div));
+    matchDefsEl.appendChild(div);
+  });
+
+  foundCountMatchEl.textContent = '0';
+  if(scoreMatchEl) scoreMatchEl.textContent = '0';
+  bannerMatchEl.classList.remove('show');
+  lockStageMatchStart();
+}
+
+
+/* =========================================================
+   3단계: 십자말풀이
    ========================================================= */
 const ENTRIES = [
   { word: "빅데이터",     clue: "아주 많은 양의 자료나 정보", row: 0, col: 4, dir: "V" },
@@ -518,6 +897,39 @@ const checkBtn = document.getElementById('checkBtn');
 const resetBtn = document.getElementById('resetBtn');
 const stage1CompleteModal = document.getElementById('stage1CompleteModal');
 const goStage2Btn = document.getElementById('goStage2Btn');
+const score2El = document.getElementById('score2');
+const startBtn2 = document.getElementById('startBtn2');
+let stage2Started = false;
+
+let cwAttempts = 0;
+let cwLocked = false;
+function computeScore2(correctWords){
+  const ratio = correctWords / ENTRIES.length;
+  return Math.round(ratio * 100);
+}
+
+function evaluateCrossword(){
+  let correctWords = 0;
+  ENTRIES.forEach(e => {
+    let allCorrect = true;
+    e.cells.forEach(([r, c]) => {
+      const input = inputEls.get(key(r, c));
+      const answer = answerMap.get(key(r, c));
+      if(!input.value){ allCorrect = false; return; }
+      if(input.value === answer){
+        input.classList.add('correct');
+        input.classList.remove('incorrect');
+      } else {
+        input.classList.add('incorrect');
+        input.classList.remove('correct');
+        allCorrect = false;
+      }
+    });
+    if(allCorrect) correctWords++;
+  });
+  foundCount1El.textContent = String(correctWords);
+  return correctWords;
+}
 
 totalCount1El.textContent = String(ENTRIES.length);
 xgridEl.style.gridTemplateColumns = 'repeat(' + xCols + ', 1fr)';
@@ -690,47 +1102,39 @@ renderClueList('H', acrossListEl);
 renderClueList('V', downListEl);
 
 function checkAnswers(){
-  let correctWords = 0;
-  ENTRIES.forEach(e => {
-    let allCorrect = true;
-    e.cells.forEach(([r, c]) => {
-      const input = inputEls.get(key(r, c));
-      const answer = answerMap.get(key(r, c));
-      if(!input.value){ allCorrect = false; return; }
-      if(input.value === answer){
-        input.classList.add('correct');
-        input.classList.remove('incorrect');
-      } else {
-        input.classList.add('incorrect');
-        input.classList.remove('correct');
-        allCorrect = false;
-      }
-    });
-    if(allCorrect) correctWords++;
-  });
-  foundCount1El.textContent = String(correctWords);
+  if(cwLocked) return;
+  cwAttempts++;
+  const correctWords = evaluateCrossword();
+  const score2 = computeScore2(correctWords);
+  if(score2El) score2El.textContent = String(score2);
   if(correctWords === ENTRIES.length){
-    banner1El.classList.add('show');
-    setTimeout(() => { stage1CompleteModal.classList.add('show'); }, 300);
-  } else {
-    banner1El.classList.remove('show');
+    finishStage2('complete', correctWords, score2);
   }
 }
 
-function resetStage1(){
+function unlockCrossword(){
+  cwLocked = false;
+  inputEls.forEach(input => { input.disabled = false; });
+  checkBtn.disabled = false;
+  resetBtn.disabled = false;
+}
+
+function resetCrossword(){
+  unlockCrossword();
   inputEls.forEach(input => {
     input.value = '';
     input.classList.remove('correct', 'incorrect', 'active-word');
   });
   foundCount1El.textContent = '0';
   banner1El.classList.remove('show');
-  stage1CompleteModal.classList.remove('show');
   clearActiveHighlight();
   currentEntryIdx = null;
+  cwAttempts = 0;
+  if(score2El) score2El.textContent = '0';
 }
 
 checkBtn.addEventListener('click', checkAnswers);
-resetBtn.addEventListener('click', resetStage1);
+resetBtn.addEventListener('click', resetCrossword);
 
 /* =========================================================
    2단계: 낱말찾기
@@ -754,6 +1158,17 @@ const banner2El = document.getElementById('banner2');
 const newGameBtn = document.getElementById('newGameBtn');
 const finalModal = document.getElementById('finalModal');
 const restartAllBtn = document.getElementById('restartAllBtn');
+const score1El = document.getElementById('score1');
+const startBtn1 = document.getElementById('startBtn1');
+let stage1Started = false;
+
+let wsMistakes = 0;
+let wsLocked = false;
+let stage1FinalScore = 0;
+function computeScore1(){
+  const ratio = wFoundWords.size / WORDS.length;
+  return Math.round(ratio * 100);
+}
 
 const COMMON_SYLLABLES = [
   "가","나","다","라","마","바","사","아","자","차","카","타","파","하",
@@ -829,6 +1244,10 @@ function buildWordSearch(){
   wFoundWords = new Set();
   wSelection = [];
   wSelDir = null;
+  wsMistakes = 0;
+  wsLocked = false;
+  wgridEl.classList.remove('locked');
+  if(score1El) score1El.textContent = '0';
 
   wgridEl.style.gridTemplateColumns = 'repeat(' + SIZE + ', 1fr)';
   wgridEl.innerHTML = '';
@@ -854,6 +1273,7 @@ function buildWordSearch(){
 
   foundCount2El.textContent = '0';
   banner2El.classList.remove('show');
+  lockStage1Start();
 }
 
 function resetWSelection(){
@@ -871,6 +1291,7 @@ function startWSelection(idx){
 }
 
 function handleWCellClick(idx){
+  if(wsLocked) return;
   const r = Math.floor(idx / SIZE), c = idx % SIZE;
 
   if(wSelection.length === 0){
@@ -929,16 +1350,26 @@ function checkWSelectionMatch(){
     const chip = wordlistEl.querySelector('[data-word="' + matchedWord + '"]');
     if(chip) chip.classList.add('found');
     foundCount2El.textContent = String(wFoundWords.size);
+    if(score1El) score1El.textContent = String(computeScore1());
     if(wFoundWords.size === WORDS.length){
-      banner2El.classList.add('show');
-      setTimeout(() => { finalModal.classList.add('show'); }, 300);
+      finishStage1('complete');
     }
     wSelection = [];
     wSelDir = null;
     return;
   }
 
-  if(wSelection.length >= MAX_WORD_LEN){
+  const stillPossible = wSelection.length < MAX_WORD_LEN && WORDS.some(w => {
+    if(wFoundWords.has(w)) return false;
+    const wArr = Array.from(w);
+    const fwdPrefix = wArr.slice(0, chars.length).join('');
+    const revPrefix = wArr.slice().reverse().slice(0, chars.length).join('');
+    return fwdPrefix === chars || revPrefix === chars;
+  });
+
+  if(!stillPossible){
+    wsMistakes++;
+    if(score1El) score1El.textContent = String(computeScore1());
     const toClear = wSelection.slice();
     toClear.forEach(i => {
       wCellEls[i].classList.remove('selecting');
@@ -957,16 +1388,313 @@ function checkWSelectionMatch(){
 newGameBtn.addEventListener('click', buildWordSearch);
 
 /* =========================================================
+   타이머 & 단계 종료 처리
+   ========================================================= */
+const STAGEMATCH_DURATION = 180; // 3분
+const STAGE1_DURATION = 120; // 2분
+const STAGE2_DURATION = 180; // 3분
+let stageMatchTimeLeft = STAGEMATCH_DURATION;
+let stage1TimeLeft = STAGE1_DURATION;
+let stage2TimeLeft = STAGE2_DURATION;
+let stageMatchTimerId = null;
+let stage1TimerId = null;
+let stage2TimerId = null;
+const timerMatchEl = document.getElementById('timerMatch');
+const timer1El = document.getElementById('timer1');
+const timer2El = document.getElementById('timer2');
+const floatingTimerBoxEl = document.getElementById('floatingTimer');
+const floatingTimerValueEl = document.getElementById('floatingTimerValue');
+
+function formatTime(sec){
+  const m = Math.floor(sec / 60);
+  const s = sec % 60;
+  return m + ':' + String(s).padStart(2, '0');
+}
+
+function updateTimerDisplay(el, sec){
+  const t = formatTime(Math.max(0, sec));
+  const isWarning = sec <= 30;
+  if(el){
+    el.textContent = t;
+    const statEl = el.closest('.stat');
+    if(statEl) statEl.classList.toggle('time-warning', isWarning);
+  }
+  if(floatingTimerValueEl) floatingTimerValueEl.textContent = t;
+  if(floatingTimerBoxEl) floatingTimerBoxEl.classList.toggle('time-warning', isWarning);
+}
+
+function stopTimerMatch(){
+  if(stageMatchTimerId){ clearInterval(stageMatchTimerId); stageMatchTimerId = null; }
+}
+function stopTimer1(){
+  if(stage1TimerId){ clearInterval(stage1TimerId); stage1TimerId = null; }
+}
+function stopTimer2(){
+  if(stage2TimerId){ clearInterval(stage2TimerId); stage2TimerId = null; }
+}
+
+function lockStageMatchStart(){
+  stopTimerMatch();
+  matchLocked = true;
+  matchStarted = false;
+  matchLayoutEl.classList.add('locked');
+  updateTimerDisplay(timerMatchEl, STAGEMATCH_DURATION);
+  if(startBtnMatch){ startBtnMatch.disabled = false; startBtnMatch.textContent = '시작하기'; }
+}
+
+function startStageMatch(){
+  if(matchStarted) return;
+  matchStarted = true;
+  matchLocked = false;
+  matchLayoutEl.classList.remove('locked');
+  if(startBtnMatch){ startBtnMatch.disabled = true; startBtnMatch.textContent = '진행 중'; }
+  startTimerMatch();
+}
+
+function lockStage1Start(){
+  stopTimer1();
+  wsLocked = true;
+  stage1Started = false;
+  wgridEl.classList.add('locked');
+  updateTimerDisplay(timer1El, STAGE1_DURATION);
+  if(startBtn1){ startBtn1.disabled = false; startBtn1.textContent = '시작하기'; }
+}
+
+function startStage1(){
+  if(stage1Started) return;
+  stage1Started = true;
+  wsLocked = false;
+  wgridEl.classList.remove('locked');
+  if(startBtn1){ startBtn1.disabled = true; startBtn1.textContent = '진행 중'; }
+  startTimer1();
+}
+
+function lockStage2Start(){
+  stopTimer2();
+  cwLocked = true;
+  stage2Started = false;
+  inputEls.forEach(input => { input.disabled = true; });
+  checkBtn.disabled = true;
+  resetBtn.disabled = true;
+  updateTimerDisplay(timer2El, STAGE2_DURATION);
+  if(startBtn2){ startBtn2.disabled = false; startBtn2.textContent = '시작하기'; }
+}
+
+function startStage2(){
+  if(stage2Started) return;
+  stage2Started = true;
+  cwLocked = false;
+  inputEls.forEach(input => { input.disabled = false; });
+  checkBtn.disabled = false;
+  resetBtn.disabled = false;
+  if(startBtn2){ startBtn2.disabled = true; startBtn2.textContent = '진행 중'; }
+  startTimer2();
+}
+
+startBtnMatch.addEventListener('click', startStageMatch);
+startBtn1.addEventListener('click', startStage1);
+startBtn2.addEventListener('click', startStage2);
+
+function startTimerMatch(){
+  stopTimerMatch();
+  stageMatchTimeLeft = STAGEMATCH_DURATION;
+  updateTimerDisplay(timerMatchEl, stageMatchTimeLeft);
+  stageMatchTimerId = setInterval(() => {
+    stageMatchTimeLeft--;
+    updateTimerDisplay(timerMatchEl, stageMatchTimeLeft);
+    if(stageMatchTimeLeft <= 0){
+      stopTimerMatch();
+      finishStageMatch('timeout');
+    }
+  }, 1000);
+}
+
+function startTimer1(){
+  stopTimer1();
+  stage1TimeLeft = STAGE1_DURATION;
+  updateTimerDisplay(timer1El, stage1TimeLeft);
+  stage1TimerId = setInterval(() => {
+    stage1TimeLeft--;
+    updateTimerDisplay(timer1El, stage1TimeLeft);
+    if(stage1TimeLeft <= 0){
+      stopTimer1();
+      finishStage1('timeout');
+    }
+  }, 1000);
+}
+
+function startTimer2(){
+  stopTimer2();
+  stage2TimeLeft = STAGE2_DURATION;
+  updateTimerDisplay(timer2El, stage2TimeLeft);
+  stage2TimerId = setInterval(() => {
+    stage2TimeLeft--;
+    updateTimerDisplay(timer2El, stage2TimeLeft);
+    if(stage2TimeLeft <= 0){
+      stopTimer2();
+      finishStage2('timeout');
+    }
+  }, 1000);
+}
+
+function finishStageMatch(reason){
+  if(matchLocked) return;
+  stopTimerMatch();
+  matchLocked = true;
+  matchLayoutEl.classList.add('locked');
+  matchFinalScore = computeScoreMatch();
+  if(scoreMatchEl) scoreMatchEl.textContent = String(matchFinalScore);
+
+  const emojiEl = document.querySelector('#matchCompleteModal .modal-emoji');
+  const titleEl = document.querySelector('#matchCompleteModal .modal-title');
+  const textEl = document.querySelector('#matchCompleteModal .modal-text');
+
+  if(reason === 'timeout'){
+    bannerMatchEl.innerHTML = '⏰ 1단계 시간 종료! 결과를 확인해 보세요.';
+    if(emojiEl) emojiEl.textContent = '⏰';
+    if(titleEl) titleEl.textContent = '1단계 시간 종료!';
+    if(textEl) textEl.innerHTML = '시간 안에 ' + matchFound.size + ' / ' + MATCH_ITEMS.length + '개를 연결했어요.<br>1단계 점수: <strong id="matchDoneScore">' + matchFinalScore + '</strong>점';
+    if(startBtnMatch) startBtnMatch.textContent = '시간 종료';
+  } else {
+    bannerMatchEl.innerHTML = '🎉 1단계 완료! 모든 용어를 연결했어요!';
+    if(emojiEl) emojiEl.textContent = '✅';
+    if(titleEl) titleEl.textContent = '1단계 완료!';
+    if(textEl) textEl.innerHTML = '용어와 뜻을 모두 연결했어요!<br>1단계 점수: <strong id="matchDoneScore">' + matchFinalScore + '</strong>점';
+    if(startBtnMatch) startBtnMatch.textContent = '완료';
+  }
+  bannerMatchEl.classList.add('show');
+  setTimeout(() => { matchCompleteModal.classList.add('show'); }, 300);
+}
+
+function finishStage1(reason){
+  if(wsLocked) return;
+  stopTimer1();
+  wsLocked = true;
+  wgridEl.classList.add('locked');
+  stage1FinalScore = computeScore1();
+  if(score1El) score1El.textContent = String(stage1FinalScore);
+
+  const emojiEl = document.querySelector('#stage1CompleteModal .modal-emoji');
+  const titleEl = document.querySelector('#stage1CompleteModal .modal-title');
+  const textEl = document.querySelector('#stage1CompleteModal .modal-text');
+
+  if(reason === 'timeout'){
+    banner2El.innerHTML = '⏰ 1단계 시간 종료! 결과를 확인해 보세요.';
+    if(emojiEl) emojiEl.textContent = '⏰';
+    if(titleEl) titleEl.textContent = '1단계 시간 종료!';
+    if(textEl) textEl.innerHTML = '시간 안에 낱말 ' + wFoundWords.size + ' / ' + WORDS.length + '개를 찾았어요.<br>1단계 점수: <strong id="stage1DoneScore">' + stage1FinalScore + '</strong>점';
+    if(startBtn1) startBtn1.textContent = '시간 종료';
+  } else {
+    banner2El.innerHTML = '🎉 1단계 완료! 모든 단어를 찾았어요!';
+    if(emojiEl) emojiEl.textContent = '✅';
+    if(titleEl) titleEl.textContent = '1단계 완료!';
+    if(textEl) textEl.innerHTML = '낱말찾기를 모두 찾았어요!<br>1단계 점수: <strong id="stage1DoneScore">' + stage1FinalScore + '</strong>점';
+    if(startBtn1) startBtn1.textContent = '완료';
+  }
+  banner2El.classList.add('show');
+  setTimeout(() => { stage1CompleteModal.classList.add('show'); }, 300);
+}
+
+const RANKS = [
+  { min: 270, emoji: '🏆', title: 'AI 마스터', desc: '최고예요! AI 용어를 완벽하게 이해하고 있어요!' },
+  { min: 220, emoji: '🥇', title: 'AI 전문가', desc: '아주 잘했어요! 대부분의 용어를 정확히 알고 있네요.' },
+  { min: 160, emoji: '🥈', title: 'AI 주니어', desc: '잘하고 있어요! 조금만 더 연습하면 전문가가 될 수 있어요.' },
+  { min: 100, emoji: '🥉', title: 'AI 인턴', desc: '좋은 시작이에요! 용어들을 한 번 더 살펴보면 좋겠어요.' },
+  { min: 0,   emoji: '🌱', title: 'AI 견습생', desc: '아직 배우는 중이에요! 다시 도전해서 실력을 키워봐요.' },
+];
+
+function getRank(total){
+  for(const r of RANKS){
+    if(total >= r.min) return r;
+  }
+  return RANKS[RANKS.length - 1];
+}
+
+function finishStage2(reason, correctWordsArg, scoreArg){
+  if(cwLocked) return;
+  stopTimer2();
+  const correctWords = correctWordsArg !== undefined ? correctWordsArg : evaluateCrossword();
+  const score2 = scoreArg !== undefined ? scoreArg : computeScore2(correctWords);
+  if(score2El) score2El.textContent = String(score2);
+
+  cwLocked = true;
+  inputEls.forEach(input => { input.disabled = true; });
+  checkBtn.disabled = true;
+  resetBtn.disabled = true;
+
+  const emojiEl = document.querySelector('#finalModal .modal-emoji');
+  const titleEl = document.querySelector('#finalModal .modal-title');
+  const introEl = document.querySelector('#finalModal .modal-text');
+
+  if(reason === 'timeout'){
+    banner1El.innerHTML = '⏰ 2단계 시간 종료! 결과를 확인해 보세요.';
+    if(emojiEl) emojiEl.textContent = '⏰';
+    if(titleEl) titleEl.textContent = '2단계 시간 종료!';
+    if(introEl) introEl.innerHTML = '시간 안에 낱말 ' + correctWords + ' / ' + ENTRIES.length + '개를 맞혔어요.';
+    if(startBtn2) startBtn2.textContent = '시간 종료';
+  } else {
+    banner1El.innerHTML = '🎉 2단계 완료! 모든 낱말을 맞혔어요!';
+    if(emojiEl) emojiEl.textContent = '🏆';
+    if(titleEl) titleEl.textContent = '최종 통과!';
+    if(introEl) introEl.innerHTML = '1단계 용어 매칭, 2단계 낱말찾기, 3단계 십자말풀이를<br>모두 통과했어요. 정말 잘했어요!';
+    if(startBtn2) startBtn2.textContent = '완료';
+  }
+  banner1El.classList.add('show');
+
+  setTimeout(() => {
+    const total = matchFinalScore + stage1FinalScore + score2;
+    document.getElementById('finalScore0').textContent = String(matchFinalScore);
+    document.getElementById('finalScore1').textContent = String(stage1FinalScore);
+    document.getElementById('finalScore2').textContent = String(score2);
+    document.getElementById('finalScoreTotal').textContent = String(total);
+
+    const rank = getRank(total);
+    const rankEmojiEl = document.getElementById('rankEmoji');
+    const rankTitleEl = document.getElementById('rankTitle');
+    const rankDescEl = document.getElementById('rankDesc');
+    if(rankEmojiEl) rankEmojiEl.textContent = rank.emoji;
+    if(rankTitleEl) rankTitleEl.textContent = rank.title;
+    if(rankDescEl) rankDescEl.textContent = rank.desc;
+
+    finalModal.classList.add('show');
+  }, 300);
+}
+
+/* =========================================================
    단계 전환 / 전체 재시작
    ========================================================= */
+const introScreenEl = document.getElementById('introScreen');
+const gameFlowEl = document.getElementById('gameFlow');
+const introConfirmBtn = document.getElementById('introConfirmBtn');
+const stageMatchEl = document.getElementById('stageMatch');
 const stage1El = document.getElementById('stage1');
 const stage2El = document.getElementById('stage2');
+const pillMatchEl = document.getElementById('pillMatch');
 const pill1El = document.getElementById('pill1');
 const pill2El = document.getElementById('pill2');
 const footerTextEl = document.getElementById('footerText');
+const goStage1Btn = document.getElementById('goStage1Btn');
 
-const FOOTER_STAGE1 = '칸에 낱말의 글자를 하나씩 입력하세요. 정답 확인을 누르면 맞은 칸은 초록색, 틀린 칸은 빨간색으로 표시돼요.<br>※ 본 자료는 초등학교 AI 리터러시 수업을 위한 교육용 콘텐츠입니다.';
-const FOOTER_STAGE2 = '단어는 오른쪽, 아래쪽, 대각선(↘ ↙) 방향으로만 놓여 있어요. 첫 글자를 누른 뒤, 단어가 이어지는 방향으로 바로 옆 글자를 계속 눌러가세요.<br>※ 본 자료는 초등학교 AI 리터러시 수업을 위한 교육용 콘텐츠입니다.';
+const FOOTER_STAGE0 = '왼쪽 용어와 오른쪽 뜻을 순서대로 눌러 선으로 연결해 보세요.<br>※ 본 자료는 초등학교 AI 리터러시 수업을 위한 교육용 콘텐츠입니다.';
+const FOOTER_STAGE1 = '단어는 오른쪽, 아래쪽, 대각선(↘ ↙) 방향으로만 놓여 있어요. 첫 글자를 누른 뒤, 단어가 이어지는 방향으로 바로 옆 글자를 계속 눌러가세요.<br>※ 본 자료는 초등학교 AI 리터러시 수업을 위한 교육용 콘텐츠입니다.';
+const FOOTER_STAGE2 = '칸에 낱말의 글자를 하나씩 입력하세요. 정답 확인을 누르면 맞은 칸은 초록색, 틀린 칸은 빨간색으로 표시돼요.<br>※ 본 자료는 초등학교 AI 리터러시 수업을 위한 교육용 콘텐츠입니다.';
+
+function goToGameFlow(){
+  introScreenEl.style.display = 'none';
+  gameFlowEl.style.display = '';
+}
+introConfirmBtn.addEventListener('click', goToGameFlow);
+
+function goToStage1(){
+  matchCompleteModal.classList.remove('show');
+  stageMatchEl.style.display = 'none';
+  stage1El.style.display = '';
+  footerTextEl.innerHTML = FOOTER_STAGE1;
+  pillMatchEl.classList.remove('active');
+  pillMatchEl.classList.add('done');
+  pill1El.classList.add('active');
+  lockStage1Start();
+}
 
 function goToStage2(){
   stage1CompleteModal.classList.remove('show');
@@ -976,24 +1704,40 @@ function goToStage2(){
   pill1El.classList.remove('active');
   pill1El.classList.add('done');
   pill2El.classList.add('active');
-  buildWordSearch();
+  lockStage2Start();
 }
 
 function restartAll(){
   finalModal.classList.remove('show');
-  resetStage1();
+  stopTimer2();
+  resetCrossword();
+  updateTimerDisplay(timer2El, STAGE2_DURATION);
   stage2El.style.display = 'none';
-  stage1El.style.display = '';
-  footerTextEl.innerHTML = FOOTER_STAGE1;
-  pill1El.classList.add('active');
+
+  stage1El.style.display = 'none';
+  stageMatchEl.style.display = '';
+
+  footerTextEl.innerHTML = FOOTER_STAGE0;
+  pillMatchEl.classList.add('active');
+  pillMatchEl.classList.remove('done');
+  pill1El.classList.remove('active');
   pill1El.classList.remove('done');
   pill2El.classList.remove('active');
   pill2El.classList.remove('done');
+
+  gameFlowEl.style.display = 'none';
+  introScreenEl.style.display = '';
+
+  buildWordSearch();
+  buildMatching();
 }
 
+goStage1Btn.addEventListener('click', goToStage1);
 goStage2Btn.addEventListener('click', goToStage2);
 restartAllBtn.addEventListener('click', restartAll);
 document.getElementById('restartTopBtn').addEventListener('click', restartAll);
+buildWordSearch();
+buildMatching();
 </script>
 </body>
 </html>
